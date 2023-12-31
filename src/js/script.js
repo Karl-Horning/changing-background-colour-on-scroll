@@ -1,29 +1,24 @@
-document.addEventListener("scroll", function () {
+/**
+ * Changes the background color based on the scroll position and section colors.
+ */
+const changeBackgroundColour = () => {
+    // Get the current scroll position
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-    if (scrollPosition >= document.getElementById("one").offsetTop) {
-        document.body.style.background = document
-            .getElementById("one")
-            .getAttribute("data-color");
-    }
-    if (scrollPosition > document.getElementById("two").offsetTop) {
-        document.body.style.background = document
-            .getElementById("two")
-            .getAttribute("data-color");
-    }
-    if (scrollPosition > document.getElementById("three").offsetTop) {
-        document.body.style.background = document
-            .getElementById("three")
-            .getAttribute("data-color");
-    }
-    if (scrollPosition > document.getElementById("four").offsetTop) {
-        document.body.style.background = document
-            .getElementById("four")
-            .getAttribute("data-color");
-    }
-    if (scrollPosition >= document.getElementById("five").offsetTop) {
-        document.body.style.background = document
-            .getElementById("five")
-            .getAttribute("data-color");
-    }
-});
+    // Get all sections with the class "scroll-section"
+    const sections = document.querySelectorAll(".scroll-section");
+
+    // Iterate through each section
+    sections.forEach((section) => {
+        // Check if the scroll position is greater than or equal to the section's top offset
+        if (scrollPosition >= section.offsetTop) {
+            // Set the body background color to the data-color attribute of the current section
+            document.body.style.background = document
+                .getElementById(section.id)
+                .getAttribute("data-color");
+        }
+    });
+};
+
+// Attach the changeBackgroundColour function to the scroll event
+document.addEventListener("scroll", changeBackgroundColour);
