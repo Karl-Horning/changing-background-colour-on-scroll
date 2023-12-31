@@ -1,5 +1,5 @@
 /**
- * Changes the background color based on the scroll position and section colors.
+ * Changes the background colour based on the scroll position and section colours.
  */
 const changeBackgroundColour = () => {
     // Get the current scroll position
@@ -12,7 +12,7 @@ const changeBackgroundColour = () => {
     sections.forEach((section) => {
         // Check if the scroll position is greater than or equal to the section's top offset
         if (scrollPosition >= section.offsetTop) {
-            // Set the body background color to the data-color attribute of the current section
+            // Set the body background colour to the data-color attribute of the current section
             document.body.style.background = document
                 .getElementById(section.id)
                 .getAttribute("data-color");
