@@ -4,20 +4,24 @@
 
 ## Table of Contents
 
-- [Description](#description)
-- [Features](#features)
-- [Demo](#demo)
-- [Getting Started](#getting-started)
-- [License](#license)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
-- [Author](#author)
+- [Changing Background Colour on Scroll](#changing-background-colour-on-scroll)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Features](#features)
+  - [Demo](#demo)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [License](#license)
+  - [Troubleshooting](#troubleshooting)
+  - [Contributing](#contributing)
+  - [Acknowledgments](#acknowledgments)
+  - [Contact](#contact)
+  - [Author](#author)
 
 ## Description
 
-This project demonstrates changing the background colour of the page as the user scrolls through different sections. Each section has its own background colour, creating a visually appealing scrolling experience.
+Dynamic background colour transition on scroll using JavaScript and CSS. The page's background updates to match the "data-color" attribute of each section as the user scrolls.
 
 ## Features
 
